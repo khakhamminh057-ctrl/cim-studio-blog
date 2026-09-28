@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CIM STUDIO | Fashion Blog</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#faf9f7;color:#222;line-height:1.65}
+a{text-decoration:none;color:inherit}.container{max-width:1100px;margin:auto;padding:0 20px}
+.topbar{background:#222;color:#fff;text-align:center;padding:8px;font-size:13px}
+header{background:#fff;border-bottom:1px solid #eee;position:sticky;top:0;z-index:10}
+.head{height:82px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.logo{font-size:25px;font-weight:800;letter-spacing:3px}.logo span{display:block;font-size:11px;letter-spacing:2px;color:#777;font-weight:400}
+nav{display:flex;gap:24px;font-size:14px;font-weight:600}nav a:hover{text-decoration:underline}
+.hero{margin-top:35px;position:relative;border-radius:18px;overflow:hidden;background:#222;color:#fff}
+.hero img{width:100%;height:410px;object-fit:cover;display:block;opacity:.78}
+.hero-text{position:absolute;left:45px;bottom:40px;max-width:600px}
+.hero-text .tag{font-size:12px;letter-spacing:2px;text-transform:uppercase}
+.hero-text h1{font-size:42px;line-height:1.15;margin:10px 0}
+.hero-text p{font-size:16px;color:#eee}
+.section{padding:48px 0}.section-title{display:flex;justify-content:space-between;align-items:end;margin-bottom:24px}
+.section-title h2{font-size:28px}.section-title p{color:#777;font-size:14px}
+.layout{display:grid;grid-template-columns:1fr 280px;gap:30px}
+.posts{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.post{background:#fff;border:1px solid #eee;border-radius:15px;overflow:hidden;transition:.2s}
+.post:hover{transform:translateY(-3px);box-shadow:0 10px 25px #0000000d}
+.post img{width:100%;height:230px;object-fit:cover;display:block}
+.post-body{padding:18px}.category{font-size:11px;color:#777;text-transform:uppercase;letter-spacing:1.5px}
+.post h3{font-size:20px;margin:7px 0}.post p{color:#666;font-size:14px}
+.meta{font-size:12px;color:#999;margin-top:12px}
+.sidebar{background:#fff;border:1px solid #eee;border-radius:15px;padding:22px;height:max-content;position:sticky;top:105px}
+.sidebar h3{font-size:16px;margin-bottom:12px}.sidebar a{display:block;padding:9px 0;border-bottom:1px solid #f0f0f0;color:#555;font-size:14px}
+.about{background:#222;color:#fff;border-radius:18px;padding:38px;margin-top:30px}
+.about h2{font-size:28px;margin-bottom:10px}.about p{color:#ccc;max-width:760px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.tag-pill{background:#fff;color:#222;border-radius:20px;padding:7px 13px;font-size:12px}
+.contact{background:#fff;border:1px solid #eee;border-radius:15px;padding:25px;margin-top:30px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:15px}
+input,textarea{width:100%;padding:12px;border:1px solid #ddd;border-radius:9px;margin-top:6px}
+textarea{min-height:110px}.full{grid-column:1/-1}
+button{background:#222;color:#fff;border:0;border-radius:22px;padding:11px 18px;font-weight:700;cursor:pointer}
+footer{margin-top:50px;background:#171717;color:#ddd;padding:35px 0}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}
+footer h3{color:#fff;margin-bottom:10px}footer a{display:block;color:#bbb;margin:5px 0;font-size:14px}
+.copyright{border-top:1px solid #333;margin-top:25px;padding-top:18px;font-size:12px;color:#888}
+@media(max-width:800px){
+.head{height:auto;padding:15px 0;flex-wrap:wrap}nav{display:none}
+.layout{grid-template-columns:1fr}.sidebar{position:static}.posts{grid-template-columns:1fr}
+.hero img{height:330px}.hero-text{left:25px;bottom:25px}.hero-text h1{font-size:31px}
+.footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:520px){
+.hero img{height:300px}.hero-text h1{font-size:26px}.section-title{display:block}.form-grid{grid-template-columns:1fr}.full{grid-column:auto}.footer-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="topbar">CIM STUDIO • FASHION BLOG • XU HƯỚNG & PHONG CÁCH</div>
+
+<header>
+<div class="container head">
+<a class="logo" href="#home">CIM <span>STUDIO • FASHION BLOG</span></a>
+<nav>
+<a href="#home">Trang chủ</a><a href="#blog">Bài viết</a><a href="#trend">Xu hướng</a><a href="#about">Về CIM</a><a href="#contact">Liên hệ</a>
+</nav>
+</div>
+</header>
+
+<main id="home">
+<div class="container">
+<section class="hero">
+<img src="https://dawndenim.com/cdn/shop/files/F01-0569_BLINK_Wide_Barrel_W27_L32_Vintage_Blue_012_1.webp?v=1757326377&width=4000" alt="CIM Studio Fashion Blog">
+<div class="hero-text">
+<div class="tag">CIM STUDIO / FEATURED</div>
+<h1>Mặc đẹp theo cách của bạn</h1>
+<p>Blog thời trang chia sẻ xu hướng, cách phối đồ và những món đồ dễ ứng dụng cho phong cách hằng ngày.</p>
+</div>
+</section>
+
+<section class="section" id="blog">
+<div class="section-title">
+<div><h2>Bài viết mới nhất</h2><p>Những câu chuyện và gợi ý thời trang từ CIM STUDIO</p></div>
+</div>
+
+<div class="layout">
+<div class="posts">
+<article class="post">
+<img src="https://outfitswapstudio.com/images/seo/pages/b2_before_basic.png" alt="Áo thun basic">
+<div class="post-body"><div class="category">Phong cách</div><h3>5 cách phối áo thun basic không bị nhàm chán</h3><p>Áo thun basic là món đồ dễ mặc nhất. Cùng thử những cách phối đơn giản với jeans, chân váy và phụ kiện.</p><div class="meta">CIM STUDIO • 28/09/2026</div></div>
+</article>
+
+<article class="post">
+<img src="https://www.la-primavera.co.jp/pic-labo/24045.jpg" alt="Quần jeans">
+<div class="post-body"><div class="category">Xu hướng</div><h3>Quần jeans wide leg: Vì sao vẫn được yêu thích?</h3><p>Form rộng tạo cảm giác thoải mái và có thể kết hợp với nhiều kiểu áo cho cả nam và nữ.</p><div class="meta">CIM STUDIO • 27/09/2026</div></div>
+</article>
+
+<article class="post">
+<img src="https://media-photos.depop.com/b1/13977780/1991820095_e69c5d315db5475cad4a4878ec467fe9/P0.jpg" alt="Áo khoác denim">
+<div class="post-body"><div class="category">Tips</div><h3>Áo khoác denim: món đồ nên có trong tủ đồ</h3><p>Denim có thể tạo nhiều phong cách từ casual đến cá tính mà không cần quá nhiều phụ kiện.</p><div class="meta">CIM STUDIO • 25/09/2026</div></div>
+</article>
+
+<article class="post">
+<img src="https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/488008/feature/vngoods_488008_feature1.jpg" alt="Chân váy chữ A">
+<div class="post-body"><div class="category">Nữ</div><h3>Chân váy chữ A và những cách phối dễ áp dụng</h3><p>Gợi ý phối áo thun, sơ mi và hoodie để tạo những set đồ phù hợp đi học, đi chơi hoặc đi làm.</p><div class="meta">CIM STUDIO • 23/09/2026</div></div>
+</article>
+
+<article class="post">
+<img src="https://static.sinsay.com/media/catalog/product/cache/850/a4e40ebdc3e371adff845072e1c73f37/4/6/467HL-09M-070-1-1175472_2.jpg" alt="Hoodie">
+<div class="post-body"><div class="category">Streetwear</div><h3>Hoodie basic: đơn giản nhưng vẫn có gu</h3><p>Một chiếc hoodie có form phù hợp sẽ giúp outfit mùa lạnh vừa thoải mái vừa trẻ trung.</p><div class="meta">CIM STUDIO • 21/09/2026</div></div>
+</article>
+
+<article class="post">
+<img src="https://shop.ralawise.com/4aee98/globalassets/ralawise/qd/qd023/qd023_ls00_2026.jpg" alt="Túi tote">
+<div class="post-body"><div class="category">Phụ kiện</div><h3>Túi tote canvas: phụ kiện nhỏ, hiệu quả lớn</h3><p>Túi tote phù hợp với phong cách tối giản và có thể sử dụng hằng ngày khi đi học hoặc đi làm.</p><div class="meta">CIM STUDIO • 19/09/2026</div></div>
+</article>
+</div>
+
+<aside class="sidebar" id="trend">
+<h3>CHUYÊN MỤC</h3>
+<a href="#blog">Phong cách hằng ngày</a>
+<a href="#blog">Xu hướng thời trang</a>
+<a href="#blog">Tips phối đồ</a>
+<a href="#blog">Thời trang nữ</a>
+<a href="#blog">Thời trang nam</a>
+<a href="#blog">Streetwear</a>
+<a href="#blog">Phụ kiện</a>
+<h3 style="margin-top:25px">TỪ KHÓA</h3>
+<div class="tags">
+<span class="tag-pill">Basic</span><span class="tag-pill">Denim</span><span class="tag-pill">Hoodie</span><span class="tag-pill">Minimal</span><span class="tag-pill">Streetwear</span>
+</div>
+</aside>
+</div>
+</section>
+
+<section class="about" id="about">
+<h2>Về CIM STUDIO</h2>
+<p>CIM STUDIO là blog thời trang trẻ tập trung vào những phong cách tối giản, dễ phối và phù hợp với cuộc sống hằng ngày. Nội dung hướng đến việc giúp người đọc tìm được cách mặc phù hợp với cá tính của mình.</p>
+</section>
+
+<section class="contact" id="contact">
+<h2>Liên hệ với CIM STUDIO</h2>
+<p style="color:#777;font-size:14px">Bạn muốn góp ý hoặc đề xuất chủ đề cho bài viết?</p>
+<form onsubmit="event.preventDefault();alert('Cảm ơn bạn! CIM STUDIO đã nhận thông tin.');">
+<div class="form-grid">
+<label>Họ và tên<input required placeholder="Nguyễn Văn A"></label>
+<label>Email<input type="email" placeholder="email@example.com"></label>
+<label class="full">Nội dung<textarea required placeholder="Bạn muốn CIM STUDIO viết về chủ đề gì?"></textarea></label>
+<div class="full"><button type="submit">Gửi liên hệ</button></div>
+</div>
+</form>
+</section>
+</div>
+</main>
+
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div><h3>CIM STUDIO</h3><p>Fashion Blog • Phong cách trẻ • Tối giản • Dễ ứng dụng</p></div>
+<div><h3>Danh mục</h3><a href="#blog">Bài viết</a><a href="#trend">Xu hướng</a><a href="#about">Về CIM</a></div>
+<div><h3>Mạng xã hội</h3><a href="https://www.tiktok.com/" target="_blank">TikTok</a><a href="https://www.facebook.com/" target="_blank">Facebook</a></div>
+</div>
+<div class="copyright">© 2026 CIM STUDIO. All rights reserved.</div>
+</div>
+</footer>
+</body>
+</html>
